@@ -1,0 +1,38 @@
+from PyDictionary import PyDictionary
+
+dict = PyDictionary()
+
+while True:
+    print("1. Meaning\n2. Synonym\n3. Antonym\n4. Break")
+    choice = input("Enter here: ")
+    choice = int(choice)
+
+    if choice == 1:
+        mean = input("Enter word here: ")
+        print("\n")
+        meaning = dict.meaning(mean)
+        print("meaning: ", meaning)
+        print("\n")
+
+    elif choice == 2:
+        syn = input("Enter word here: ")
+        print("\n")
+        synonym = dict.synonym(syn)
+        print("synonym: ", synonym)
+        print("\n")
+
+    elif choice == 3:
+        ant = input("Enter word here: ")
+        print("\n")
+        antonym = dict.antonym(ant)
+        print("antonym:", antonym)
+        print("\n")
+
+    elif choice == 4:
+        print("Break")
+        break
+
+    else:
+        print("1. Meaning\n2. Synonym\n3. Antonym\n4. Break")
+        choice = input("Enter here: ")
+
